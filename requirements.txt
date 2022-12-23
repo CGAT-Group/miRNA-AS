@@ -1,0 +1,8 @@
+numpy == 1.22.0
+pandas == 1.4.1
+pyarrow == 7.0.0
+gtfparse == 1.2.1
+matplotlib == 3.5.0
+scipy == 1.8.0
+scikit-learn == 1.0.2
+statsmodels == 0.13.2
