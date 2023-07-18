@@ -71,7 +71,7 @@ def calc_ll_ratios(data_path, log_random_path, random_path, path, disease, appro
             logger.debug(f'read in model {i}')
             nb_t_models = model_processing.filter_models_by_rmse(random_path,f'nb_t_models',prefix=f'{i}_')
             #common pairs
-            common_pairs = model_processing.get_common_models(nb_t_models, all_t_models)
+            common_pairs = model_processing.get_common_models(nb_t_models, all_t_models,prefix=f'{i}_')
             #log likelihood
             log_lls = model_processing.calc_ll(random_path/'ll',common_pairs,suffix=f'_{i}')
         else:
